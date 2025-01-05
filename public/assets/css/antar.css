@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:#0099ff;
+}
+
+/* Header Section */
+/* Header Section */
+.header-section {
+    height: 60vh;
+    position: relative;
+    overflow: hidden; /* Supaya gambar tidak keluar dari area header */
+}
+
+.gelombang {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 5px;
+    text-align: center;
+    line-height: 100px;
+    
+}
+.header-section .header-image {
+    width: 100%; /* Gambar akan menyesuaikan lebar container */
+    height: 100%; /* Gambar akan menyesuaikan tinggi container */
+    object-fit: cover; /* Memastikan gambar memenuhi area tanpa distorsi */
+    position: absolute; /* Menempatkan gambar di belakang konten */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Memastikan gambar di belakang overlay dan konten */
+}
+
+.header-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Lapisan transparan di atas gambar */
+    z-index: 2; /* Overlay berada di atas gambar */
+}
+
+.header-content {
+    position: relative;
+    z-index: 3; /* Konten berada di atas overlay */
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 20px;
+}
+
+.card-header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px 10px 0 0;
+    font-size: 2rem;
+    z-index: 100;
+}
+
+.card-body input {
+    border-radius: 20px;
+}
+
+.btn-primary {
+    background-color: #527DAB;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #406b8d;
+}
