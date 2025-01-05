@@ -17,6 +17,7 @@
                 <li class="nav-item"><a class="nav-link" href="#gallery">Galeri</a></li>
                 <li class="nav-item"><a class="nav-link" href="#hubungi-kami">Hubungi Kami</a></li>
             </ul>
+            <a href="/login" class="btn btn-outline-light ms-3">Login</a>
         </div>
     </div>
 </nav>
